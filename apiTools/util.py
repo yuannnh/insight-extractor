@@ -1,6 +1,6 @@
 """
-format scores array
-[{kernel1:String,score:Number}]
+format kernel1
+{kernel1:String,score:Number}
 """
 def formatKernel1s(scores):
     res  = list()
@@ -10,6 +10,28 @@ def formatKernel1s(scores):
         res.append(elem)
     return res
 
+"""
+format kernel2
+exemple
+{
+    "kernel2": "numéro de pervers",
+    "phrases": [
+        {
+            "phrase": "ce est sosh qui me donne un numéro de pervers",
+            "appearTimes": 1,
+            "verbatimes": [
+                {
+                    "idx": 534,
+                    "tags": [
+                        "device"
+                    ]
+                }
+            ],
+            "cluster": "K0"
+        }
+    ]
+}
+"""
 def formatKernel2s(k2dict,docs):
 
     def verbatimIdxWithTags(vlist):
@@ -35,7 +57,7 @@ def formatKernel2s(k2dict,docs):
         res.append(elem)
     return res
 
-'''make verbatim index of k2dict the list indexes of docs, then delete the docs idx attribute'''
+'''make verbatim indexes in k2dict the list indexes of docs, then delete the docs idx attribute, in this way, a verbatime can be accessible par a list index, its faster'''
 def ressovleIndexProb(docs,k2dict):
 
     def findDocIdx(n):
@@ -55,7 +77,7 @@ def ressovleIndexProb(docs,k2dict):
 
     return docs, k2dict
         
-'''take a list of verbatim index, return a list of verbatim objects with tags'''
+'''add tags in the verbatime element. This function takes a list of verbatim index, return a list of verbatim objects with tags'''
 def verbatimIdxWithTags(vlist, docs):
     if vlist:
         res = list()
@@ -73,7 +95,12 @@ def findK2sByK1(k1,k2s):
     for k2 in k2s:
         if k1 in k2['kernel2']:
             res.append(k2)
-    return res      
+    return res 
+
+def findK2sByTags(tags,k2s):
+    res=list()
+    # to add
+    return res     
             
 def str2idxList(s):
     return [int(n) for n in s.split(',')]
