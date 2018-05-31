@@ -81,6 +81,5 @@ Un élément verbatime a des attributs:
 * <b>tous les kernel1</b>: http://127.0.0.1:5000/kernel1s
 * <b>tous les kernel2</b>: http://127.0.0.1:5000/kernel2s
 * <b>filtrer les kernel2 qui contient le kernel1 facture</b>: http://127.0.0.1:5000/kernel2s?kernel1=facture
+* <b>filtrer les kernel2 avec tag device</b>: http://127.0.0.1:5000/kernel2s?tags=device      (cette fonctionnalité n'est pas encore réalisé, il reste à compléter la fonction kernel2 dans api.py et à ajouter une fonction findK2sByTags dans util.py)
 * <b>trouver les verbatimes avec index 20,30,40</b>: http://127.0.0.1:5000/docs?indexes=20,30,40
-* 
-
