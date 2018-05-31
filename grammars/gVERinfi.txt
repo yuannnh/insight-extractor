@@ -1,0 +1,4 @@
+['VER:pres','PRP','VER:infi']	[0,1,2]
+['PRO:PER','VER:infi']	[1]
+['VER:pres','VER:infi']	[1]
+['VER:cond','VER:infi']	[1]

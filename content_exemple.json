@@ -1,0 +1,24 @@
+/*****kernel******/
+["numéro de pervers",
+ "réduction chez orange", 
+ "nom box", 
+ "interdiction de paiement", 
+ "copine", 
+ "raymond bernard", 
+ "_ __ _ 1ere", 
+ "rue de wailly", 
+ "compte personnel", 
+ "appel illimité"]
+
+ {
+    "num�ro de pervers": [('ce est sosh qui me donne un num�ro de pervers', 1, {535}, 'K0')],//apprear once, verbatime index 535, cluster k0
+    "r�duction chez orange": [('je ai le droit a des r�ductions chez orange', 1, {311}, 'K0')],
+    "nom box": [('concernant le autre forfait une demande est faite de trasnfert ma fille reprend a son nom la box', 1, {114}, 'K0')],
+    "interdiction de paiement": [('il ne y a pas le interdiction de paiement', 1, {427}, 'K0')],
+    "copine": [('celui de ma copine', 1, {703}, 'K0')],
+    "raymond bernard": [('raymond bernard la tour saint-mens appartement num�ro neuf 71', 1, {45}, 'K0')],
+    "_ __ _ 1ere": [('le _ __ _ 1ere est le adresse li�e � la livebox', 1, {578}, 'K0')],
+    "rue de wailly": [('le adresse est 20 rue de wailly 62310 coupelle vieille', 1, {142}, 'K0')],
+    "compte personnel": [('�a modifie mon compte personnel', 1, {475}, 'K0')],
+    "appel illimit�": [('je souhaiterais pouvoir repasser aux appels illimit�s', 1, {757}, 'K0')]
+ }
